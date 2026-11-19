@@ -35,11 +35,9 @@ tally=[]
 for i in modulus:
     if float(random.choice(modulus))<=1:
         tally.append(1)
-    else:
-        tally.append(0)
 
 # Approximates pi based on the number of points in the unit circle
-pi_approx=4*sum(tally)/len(tally)
+pi_approx=4*sum(tally)/number
 
 # Calculates the error in the approximation
 error=100*abs(pi-pi_approx)/pi
