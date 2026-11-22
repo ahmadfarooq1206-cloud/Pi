@@ -1,4 +1,5 @@
 Required modules:
 
+matplotlib: https://pypi.org/project/matplotlib/
 numpy: https://pypi.org/project/numpy/
 random: Part of the Python standard library
