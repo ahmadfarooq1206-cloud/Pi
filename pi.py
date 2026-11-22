@@ -1,3 +1,4 @@
+import matplotlib.pyplot as plt
 import numpy as np
 import random
 
@@ -45,3 +46,13 @@ error=100*abs(pi-pi_approx)/pi
 print(f'\nValue of pi: {pi}')
 print(f'Approximation: {pi_approx}')
 print(f'Error: {error}%\n')
+
+# Computes values corresponding to a circle's edge
+upper_y_plot=+(1-points**2)**.5
+lower_y_plot=-(1-points**2)**.5
+
+# Plots the circle and points
+plt.scatter(x,y,color='r',s=1)
+plt.plot(points,upper_y_plot,color='b')
+plt.plot(points,lower_y_plot,color='b')
+plt.show()
