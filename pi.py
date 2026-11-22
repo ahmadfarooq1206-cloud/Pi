@@ -41,7 +41,6 @@ pi_approx=4*sum(tally)/number
 
 # Calculates the error in the approximation
 error=100*abs(pi-pi_approx)/pi
-error=round(error,4)
 
 print(f'\nValue of pi: {pi}')
 print(f'Approximation: {pi_approx}')
